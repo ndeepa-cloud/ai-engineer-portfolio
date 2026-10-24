@@ -1,0 +1,212 @@
+{
+  "profile": {
+    "name": "Nithin Deepa",
+    "professional_identity": [
+      "AI Engineer",
+      "Software Engineer",
+      "GenAI and LLM Applications"
+    ],
+    "professional_introduction": "A Computer Science student at Murray State University focused on AI Engineering, Generative AI, and Software Engineering.",
+    "location": "United States",
+    "github": "https://github.com/ndeepa-cloud",
+    "linkedin": "https://www.linkedin.com/in/nithin-deepa",
+    "career_interests": [
+      "Applied AI Engineering",
+      "Generative AI Engineering",
+      "Software Engineering",
+      "Full-Stack Development",
+      "LLM Applications",
+      "RAG and AI Agents"
+    ]
+  },
+  "education": {
+    "institution": "Murray State University",
+    "degree": "Bachelor's in Computer Science",
+    "expected_graduation": "May 2027",
+    "academic_areas": [
+      "Data Structures and Algorithms",
+      "Database Management Systems",
+      "Computer Security",
+      "Software Engineering",
+      "Artificial Intelligence and Machine Learning",
+      "Backend and Web Development"
+    ]
+  },
+  "skills": {
+    "languages": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "SQL",
+      "C++"
+    ],
+    "frontend": [
+      "React",
+      "HTML",
+      "CSS",
+      "Tailwind CSS"
+    ],
+    "backend": [
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+      "Server-Sent Events",
+      "Node.js"
+    ],
+    "ai_engineering": [
+      "LLMs",
+      "RAG",
+      "LangChain",
+      "LangGraph",
+      "embeddings",
+      "prompt engineering",
+      "AI agents",
+      "Gemini API",
+      "Groq API",
+      "Hugging Face",
+      "Vector Embeddings",
+      "Vector Search"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "SQL Server",
+      "ChromaDB",
+      "pgvector",
+      "Supabase",
+      "Azure SQL"
+    ],
+    "developer_tools": [
+      "Git",
+      "GitHub",
+      "Docker",
+      "AWS",
+      "Google Cloud (Cloud Run)",
+      "Render",
+      "Vercel",
+      "Google Cloud Vertex AI",
+      "VS Code"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Padsnap AI Assistant",
+      "category": "Real Estate AI Application",
+      "status": "Live Demo",
+      "description": "An AI-powered real estate assistant developed during an AI engineering internship, enabling natural-language property discovery and automated generation of structured marketing content.",
+      "technologies": [
+        "Python",
+        "Flask",
+        "Groq API",
+        "Llama 3",
+        "REST APIs",
+        "SSE"
+      ],
+      "features": [
+        "Natural-language property discovery with Llama 3 via Groq",
+        "Flask REST APIs with streaming responses over SSE",
+        "Structured property marketing content generation",
+        "500+ interactions, as reported in my resume"
+      ],
+      "impact": "Improved accessibility to property information through conversational AI and automated marketing workflows.",
+      "demo_url": "https://padsnap-ai-assistant.onrender.com/",
+      "repository_url": null,
+      "source": "Project details explicitly supplied by Nithin in the portfolio upgrade brief.",
+      "internship_context": "Developed during an AI engineering internship. Employer and role dates are not specified in the project brief; do not infer that Padsnap and PatSnap are the same organization.",
+      "metric_provenance": "500+ interactions, described by Nithin as reported in his resume. No latency, accuracy, or security metrics provided."
+    },
+    {
+      "name": "RAG Market Intelligence System",
+      "category": "Retrieval-Augmented Generation / Document Intelligence",
+      "status": "Project",
+      "description": "A retrieval-augmented generation system that enables users to search uploaded documents and receive contextual answers grounded in relevant source material.",
+      "technologies": [
+        "Python",
+        "LangChain",
+        "ChromaDB",
+        "Hugging Face",
+        "Flask"
+      ],
+      "features": [
+        "PDF and text ingestion, preprocessing, and chunking",
+        "all-MiniLM-L6-v2 embeddings indexed in ChromaDB",
+        "Top-k semantic similarity retrieval with LangChain",
+        "Context-aware answers with source citations",
+        "Natural-language questions about uploaded documents",
+        "Document embeddings stored and indexed in ChromaDB"
+      ],
+      "impact": "Made document exploration more efficient through semantic search and source-grounded AI answers.",
+      "demo_url": null,
+      "repository_url": null,
+      "source": "Project details explicitly supplied by Nithin in the portfolio upgrade brief.",
+      "embedding_model": "all-MiniLM-L6-v2"
+    },
+    {
+      "name": "AI Outreach Agent",
+      "status": "Live Demo",
+      "description": "AI-powered outreach and communication workflows.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "FastAPI",
+        "PostgreSQL",
+        "Supabase",
+        "Gemini"
+      ],
+      "features": [
+        "Contact management",
+        "Call screening",
+        "AI-generated replies",
+        "Campaigns"
+      ],
+      "completion_status": "Deployment URL supplied by Nithin. Availability of a demo does not establish that every feature is complete.",
+      "demo_url": "https://ai-outreach-agent-pi.vercel.app/"
+    },
+    {
+      "name": "OpsPilot \u2014 AI Operations Copilot",
+      "status": "In Development",
+      "description": "AI operations assistant involving LLMs, RAG, backend APIs, and workflow automation.",
+      "technologies": [
+        "LLMs",
+        "RAG",
+        "Backend APIs",
+        "Workflow automation"
+      ],
+      "implementation_note": "In development. Do not describe planned capabilities as completed."
+    },
+    {
+      "name": "College Management Portal",
+      "status": "Project details supplied by Nithin; more details not provided",
+      "description": "Full-stack application for managing college-related workflows.",
+      "technologies": [],
+      "features": []
+    }
+  ],
+  "experience": [
+    {
+      "title": "AI Engineer Intern",
+      "organization": "Padsnap (AI Startup)",
+      "dates": "May 2026 - Jul 2026",
+      "summary": "Built a retrieval-augmented generation (RAG) pipeline with LangChain, ChromaDB, and Hugging Face embeddings for semantic retrieval over real estate data, improving answer relevance and grounding responses across 500+ interactions. Designed an LLM-powered content generation pipeline that automated property descriptions, listing headlines, social media captions, and email marketing content. Implemented real-time LLM response streaming through three Flask API endpoints using Server-Sent Events (SSE) and the Groq streaming API. Orchestrated multi-step AI agent workflows in LangGraph by combining retrieval, tool calls, and task automation to deliver source-cited answers over pgvector."
+    }
+  ],
+  "leadership": [
+    {
+      "title": "President",
+      "organization": "Indian Students Association, Murray State University",
+      "dates": "Feb 2024 - Feb 2026",
+      "summary": "Led a 200+ member student organization, overseeing budget management, event planning, and cross-cultural initiatives to promote student engagement and campus inclusion. Organized 10+ campus-wide events, coordinating activities and connecting international students with academic resources, professional development opportunities, and university support services."
+    }
+  ],
+  "contact": {
+    "github": "https://github.com/ndeepa-cloud",
+    "linkedin": "https://www.linkedin.com/in/nithin-deepa",
+    "email": "Not provided; use the configured contact form when available"
+  },
+  "resume": {
+    "available": true,
+    "path": "/Nithin_Deepa_Resume.pdf",
+    "details": "The supplied PDF is available through the Download resume links in the Hero and Contact sections. Do not infer additional qualifications from its availability."
+  },
+  "skills_context": "Skills are reported areas of project and academic experience, not proficiency ratings or certifications. Learning status for individual tools was not supplied."
+}

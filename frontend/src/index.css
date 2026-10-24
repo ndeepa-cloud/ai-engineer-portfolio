@@ -1,0 +1,265 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary-red: #F03A2D;
+  --color-deep-black: #080808;
+  --color-pure-white: #FFFFFF;
+  --color-secondary-gray: #B8B8B8;
+  --color-surface-dark: #121212;
+
+  color-scheme: dark;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--color-pure-white);
+  background-color: var(--color-deep-black);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-deep-black);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+::selection {
+  color: #ffffff;
+  background: #F03A2D;
+}
+
+:focus-visible {
+  outline: 2px solid #F03A2D;
+  outline-offset: 4px;
+}
+
+/* Typography Utility Classes */
+.font-display {
+  font-family: "Space Grotesk", "Archivo Black", -apple-system, sans-serif;
+  letter-spacing: -0.035em;
+}
+
+.font-heading {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.font-hero {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(48px, 6.2vw, 96px);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.font-section-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(46px, 7.5vw, 120px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.font-giant-watermark {
+  font-family: "Archivo Black", "Space Grotesk", sans-serif;
+  font-size: clamp(84px, 17vw, 240px);
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+  font-weight: 900;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+/* Layout Containers */
+.site-container-wide {
+  width: 100%;
+  max-width: 1760px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 4.5vw, 84px);
+}
+
+/* Hero Section */
+.hero-wrapper {
+  background-color: var(--color-primary-red);
+  min-height: 100svh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hero subtle grid / texture */
+.hero-texture {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.12) 0%, transparent 50%),
+                    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 64px 64px, 64px 64px;
+}
+
+/* Character Animation & Presentation */
+.character-viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.character-asset {
+  max-height: min(85svh, 860px);
+  width: auto;
+  object-fit: contain;
+  object-position: bottom center;
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.35));
+}
+
+/* Interactive Project Rows */
+.project-row-item {
+  position: relative;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.project-row-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  padding-left: 12px;
+  border-color: rgba(240, 58, 45, 0.6);
+}
+
+.project-row-item:hover .project-row-arrow-icon {
+  transform: translate(6px, -6px) rotate(45deg);
+  background-color: #F03A2D;
+  color: #FFFFFF;
+  border-color: #F03A2D;
+}
+
+.project-row-arrow-icon {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Skills Section Card / Tags */
+.skill-badge-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  border: 1px solid rgba(8, 8, 8, 0.12);
+  background: #FFFFFF;
+  color: #080808;
+  font-weight: 600;
+  font-size: clamp(16px, 1.3vw, 22px);
+  transition: all 0.25s ease;
+}
+
+.skill-badge-item:hover {
+  background: #F03A2D;
+  color: #FFFFFF;
+  border-color: #F03A2D;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(240, 58, 45, 0.22);
+}
+
+/* Contact Underline Inputs */
+.contact-underline-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+  padding: 16px 4px 12px 4px;
+  color: #FFFFFF;
+  font-size: 18px;
+  outline: none;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.contact-underline-input:focus {
+  border-bottom-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.contact-underline-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Navigation Link hover animation */
+.nav-pill-link {
+  position: relative;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.nav-pill-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-pill-link:hover::after,
+.nav-pill-link.is-active::after {
+  transform: scaleX(1);
+}
+
+/* Chat Assistant overrides */
+.chat-scrollbar {
+  scrollbar-color: rgba(240, 58, 45, 0.4) transparent;
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+}
+
+.typing-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.typing-dots i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #F03A2D;
+  animation: typing-dot 1s ease-in-out infinite;
+}
+
+.typing-dots i:nth-child(2) { animation-delay: 0.15s; }
+.typing-dots i:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes typing-dot {
+  0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-4px); }
+}
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
